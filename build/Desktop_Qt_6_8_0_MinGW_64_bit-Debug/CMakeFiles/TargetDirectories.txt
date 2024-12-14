@@ -1,0 +1,9 @@
+C:/Users/Admin/Desktop/gui_example/eewq/testius/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/CMakeFiles/testius.dir
+C:/Users/Admin/Desktop/gui_example/eewq/testius/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/CMakeFiles/edit_cache.dir
+C:/Users/Admin/Desktop/gui_example/eewq/testius/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/CMakeFiles/rebuild_cache.dir
+C:/Users/Admin/Desktop/gui_example/eewq/testius/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/CMakeFiles/list_install_components.dir
+C:/Users/Admin/Desktop/gui_example/eewq/testius/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/CMakeFiles/install.dir
+C:/Users/Admin/Desktop/gui_example/eewq/testius/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/CMakeFiles/install/local.dir
+C:/Users/Admin/Desktop/gui_example/eewq/testius/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/CMakeFiles/install/strip.dir
+C:/Users/Admin/Desktop/gui_example/eewq/testius/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/CMakeFiles/testius_autogen_timestamp_deps.dir
+C:/Users/Admin/Desktop/gui_example/eewq/testius/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/CMakeFiles/testius_autogen.dir
