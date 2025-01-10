@@ -27,6 +27,11 @@ void Computer::ImagePathSet(std::string a)
     ImagePath = a;
 }
 
+void Computer::Base64Set(QString a)
+{
+    Base64 = a;
+}
+
 void Computer::DatesSet(Edates a, Edates b)
 {
     Dates.first.day = a.day;
@@ -71,12 +76,17 @@ std::string Computer::ImagePathGet() const
     return ImagePath;
 }
 
+QString Computer::Base64Get() const
+{
+    return Base64;
+}
+
 std::string Computer::DatesGet() const
 {
     std::string a;
-    a = std::to_string(Dates.first.day)+"."+std::to_string(Dates.first.month);
-    a = a+"."+std::to_string(Dates.first.year)+" "+std::to_string(Dates.second.day)+".";
-    a = a+std::to_string(Dates.second.month)+"."+std::to_string(Dates.second.year);
+    a = std::to_string(Dates.first.day) + "." + std::to_string(Dates.first.month);
+    a = a + "." + std::to_string(Dates.first.year) + " " + std::to_string(Dates.second.day) + ".";
+    a = a + std::to_string(Dates.second.month) + "." + std::to_string(Dates.second.year);
 
     return a;
 }

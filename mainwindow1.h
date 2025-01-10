@@ -14,42 +14,48 @@
 #include <QXmlStreamWriter>
 #include <QXmlStreamReader>
 #include <QErrorMessage>
+#include <QBuffer>
+#include <QMutex>
+#include <QWaitCondition>
 #include <iostream>
 #include "computer.h"
 
 class MainWindow1 : public QWidget
 {
-    std::vector<Computer> Notes; //Кэш
-    QListWidget *listWidget = new QListWidget; //Отображаемый в главном окне список
+    QVector<Computer> Notes; //Кэш
+    QListWidget* listWidget = new QListWidget; //Отображаемый в главном окне список
 
-    QWidget *addW;    //Указатели на новые окна
-    QWidget *editW;
-    QWidget *showW;
+    QWidget* addW;    //Указатели на новые окна
+    QWidget* editW;
+    QWidget* showW;
 
-    QLineEdit *searhlineedit = nullptr; // Поле поиска в главном окне
+    QMutex mutex;
+    QWaitCondition condition;
 
-    QLayout *imageLayout = nullptr;
-    QLabel *imageLabel = nullptr; //Картинка
+    QLineEdit* searhlineedit = nullptr; // Поле поиска в главном окне
+
+    QLayout* imageLayout = nullptr;
+    QLabel* imageLabel = nullptr; //Картинка
     QImage TempIm;
     QString TempPh;
 
     int currentID = 0;
 
-    QLineEdit *lineedit1 = nullptr;
-    QLineEdit *lineedit2 = nullptr;
-    QLineEdit *lineedit3 = nullptr;
-    QLineEdit *lineedit4 = nullptr;
-    QLineEdit *lineedit5 = nullptr;
-    QLineEdit *lineedit6 = nullptr;
-    QLineEdit *lineedit7 = nullptr;
+    QLineEdit* lineedit1 = nullptr;
+    QLineEdit* lineedit2 = nullptr;
+    QLineEdit* lineedit3 = nullptr;
+    QLineEdit* lineedit4 = nullptr;
+    QLineEdit* lineedit5 = nullptr;
+    QLineEdit* lineedit6 = nullptr;
+    QLineEdit* lineedit7 = nullptr;
     //Извините....
-    QLineEdit *lineedit21 = nullptr;
-    QLineEdit *lineedit22 = nullptr;
-    QLineEdit *lineedit23 = nullptr;
-    QLineEdit *lineedit24 = nullptr;
-    QLineEdit *lineedit25 = nullptr;
-    QLineEdit *lineedit26 = nullptr;
-    QLineEdit *lineedit27 = nullptr;
+    QLineEdit* lineedit21 = nullptr;
+    QLineEdit* lineedit22 = nullptr;
+    QLineEdit* lineedit23 = nullptr;
+    QLineEdit* lineedit24 = nullptr;
+    QLineEdit* lineedit25 = nullptr;
+    QLineEdit* lineedit26 = nullptr;
+    QLineEdit* lineedit27 = nullptr;
 public:
     MainWindow1();
     void zachistka(int a);

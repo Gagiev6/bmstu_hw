@@ -20,8 +20,9 @@ class Computer
     std::string Model; //Модель
     std::string OS; // Установленная ОС
     std::string ImagePath;
+    QString Base64;
 
-    std::pair<Edates,Edates> Dates; //Даты ввода и вывода
+    std::pair<Edates, Edates> Dates; //Даты ввода и вывода
     long long MacAdress; //Тут нужно реализовать 16-тиричную систему(?)
 
 public: //Ещё будут дополняться
@@ -32,6 +33,7 @@ public: //Ещё будут дополняться
     void ModelSet(std::string a);
     void OSSet(std::string a);
     void ImagePathSet(std::string a);
+    void Base64Set(QString a);
 
     void DatesSet(Edates a, Edates b);
     void MacAdressSet(long long a);
@@ -42,6 +44,7 @@ public: //Ещё будут дополняться
     std::string ModelGet() const;
     std::string OSGet() const;
     std::string ImagePathGet() const;
+    QString Base64Get() const;
 
     std::string DatesGet() const;
     long long MacAdressGet() const;
